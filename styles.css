@@ -429,3 +429,42 @@ h2:after{
 .programList span {
   flex: 1;
 }
+.programList li{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin: 14px 0;
+}
+
+.programList .btn{
+  min-width: 110px;   /* vaste breedte */
+  text-align: center; /* tekst mooi in het midden */
+.programList li{
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.programList li:last-child{
+  border-bottom: none;
+}
+
+.programList li:hover{
+  background: rgba(255,255,255,0.35);
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+  .programList strong{
+  display:inline-block;
+  margin-right: 8px;
+}
+
+.programList span{
+  color: #2b2b2b;
+}
+
+.programList span .date{
+  color: rgba(0,0,0,0.55);
+  font-weight: 400;
+}
