@@ -559,3 +559,52 @@ h2:after{
 .btn-ghost:hover {
   background: rgba(255,255,255,0.15);
 }
+/* HERO VIDEO */
+.hero-video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Video container */
+.video-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* YouTube iframe fullscreen */
+.video-bg iframe {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Content boven video */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8vw;
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.15)
+  );
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  max-width: 700px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 520px;
+  margin-top: 1rem;
+}
