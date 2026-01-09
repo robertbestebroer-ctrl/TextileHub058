@@ -418,3 +418,14 @@ h2:after{
   height:100%;
   border:0;
 }
+.programList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.programList span {
+  flex: 1;
+}
